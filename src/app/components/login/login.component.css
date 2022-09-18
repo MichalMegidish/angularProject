@@ -1,0 +1,14 @@
+.login{
+    background-color:#98503d ;
+    color: white;
+}
+
+.logingoogle{
+   border:solid 2px #d8a899; 
+}
+
+.logingoogle:hover{
+    background-color: #d8a899;
+    color: white;
+}
+

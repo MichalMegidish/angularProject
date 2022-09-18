@@ -1,0 +1,15 @@
+.navbar{
+  background-color: #c6c3c2;  
+}
+
+.dibnav{
+    background-color: #c6c3c2;
+}
+
+.list-group-item:hover{
+color: white;
+}
+
+.list-group-item:active {
+  color: white;
+}

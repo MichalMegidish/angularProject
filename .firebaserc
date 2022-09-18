@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-project-4883e": {
+      "hosting": {
+        "angularProject": [
+          "angular-project-4883e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-project-4883e"
+  }
+}

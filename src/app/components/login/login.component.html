@@ -1,0 +1,31 @@
+
+ <div class="container text-center">
+   <img src="assets/logo2.jpg" alt=""  style="height: 100px;" class="my-5 "></div>
+<div class="container my-5 mx-auto col-3">
+
+  <h1 class="text-center">LOGIN</h1>
+  <form #loginForm="ngForm" (ngSubmit)="submitLogin()">
+    <div class="form-group">
+      <label for="name"></label>
+      <input type="email" name="email" class="form-control" id="email" [(ngModel)]="user.email" #email="ngModel"
+        ngModel
+        required email minlength="6" placeholder="Email"  />
+         <small *ngIf="email.invalid && email.touched" style="color: red;">Invalid email</small>
+    </div>
+    <div class="form-group">
+      <label for="password"></label>
+      <input type="password" name="password" class="form-control" id="password" [(ngModel)]="user.password"
+        #password="ngModel" required="" placeholder="Password" ngModel required
+        minlength="8" />
+         <small *ngIf="password.invalid && password.touched" style="color: red;">Invalid password </small>
+    </div>
+
+    <button type="submit" class="btn login mt-3 w-100" [disabled]="loginForm.invalid" >Login</button>
+
+  </form>
+  <button class="btn logingoogle mt-3 w-100" (click)="loginWithGoogle()">
+    <img class="icongoogle" src="assets/icongoogle.png" alt="" style="height: 20px;" > Login with google</button>
+  <p class="text-center mt-3">
+    <a routerLink="/register">New User? Register here!</a></p>
+</div>
+
